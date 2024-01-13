@@ -5,7 +5,7 @@ using AutoMapper;
 using TaskRpgApi.Domain.Abstractions.Repositories;
 using TaskRpgApi.Domain.Abstractions.Entities;
 
-namespace CropKeeperApi.Persistence.Repositories;
+namespace TaskRpgApi.Persistence.Repositories;
 
 public class GenericRepository<TEntity, TInput, TOutput> : IGenericRepository<TEntity, TInput, TOutput>
     where TEntity : class, IEntity

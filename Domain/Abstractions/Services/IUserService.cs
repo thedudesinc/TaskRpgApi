@@ -1,5 +1,5 @@
-using CropKeeperApi.Domain.Models.Inputs;
-using CropKeeperApi.Domain.Models.Outputs;
+using TaskRpgApi.Domain.Models.Inputs;
+using TaskRpgApi.Domain.Models.Outputs;
 using TaskRpgApi.App.Request;
 
 namespace TaskRpg.Domain.Abstractions.Services;

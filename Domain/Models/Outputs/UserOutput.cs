@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
 using TaskRpgApi.Domain.Abstractions.Entities;
 
-namespace CropKeeperApi.Domain.Models.Outputs;
+namespace TaskRpgApi.Domain.Models.Outputs;
 
 public class UserOutput : IOutput
 {
@@ -11,16 +11,8 @@ public class UserOutput : IOutput
 
     public string Email { get; set; } = string.Empty;
 
-    public string Zip { get; set; } = string.Empty;
-
-    public string DisplayImageUrl { get; set; } = string.Empty;
-
     [JsonIgnore]
     public string Password { get; set; } = string.Empty;
-
-    public bool AllowEmailNotifications { get; set; } = true;
-
-    public bool AllowSiteNotifications { get; set; } = true;
 
     public DateTime DateCreated { get; set; }
 

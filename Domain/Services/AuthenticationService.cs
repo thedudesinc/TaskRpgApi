@@ -1,5 +1,5 @@
 using BCrypt.Net;
-using CropKeeperApi.Domain.Models.Outputs;
+using TaskRpgApi.Domain.Models.Outputs;
 using TaskRpgApi.Domain.Abstractions;
 using TaskRpgApi.Domain.Abstractions.Services;
 

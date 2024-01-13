@@ -1,4 +1,4 @@
-using CropKeeperApi.Domain.Models.Outputs;
+using TaskRpgApi.Domain.Models.Outputs;
 
 namespace TaskRpgApi.Domain.Abstractions.Services;
 

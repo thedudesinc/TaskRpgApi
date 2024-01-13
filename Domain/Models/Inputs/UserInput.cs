@@ -2,7 +2,7 @@ using TaskRpgApi.Domain.Abstractions.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 
-namespace CropKeeperApi.Domain.Models.Inputs;
+namespace TaskRpgApi.Domain.Models.Inputs;
 
 public class UserInput : IInput
 {
@@ -16,17 +16,4 @@ public class UserInput : IInput
     public string Email { get; set; } = string.Empty;
 
     public string? Password { get; set; }
-
-    [Required]
-    [RegularExpression(@"^\d{5}(?:[-\s]\d{4})?$",
-         ErrorMessage = "Zip Code must be in the format of '#####' or '#####-####', example: '32334' or '32334-0092'")]
-    public string Zip { get; set; } = string.Empty;
-
-    public string DisplayImageUrl { get; set; } = string.Empty;
-
-    [Required]
-    public bool AllowEmailNotifications { get; set; } = true;
-
-    [Required]
-    public bool AllowSiteNotifications { get; set; } = true;
 }

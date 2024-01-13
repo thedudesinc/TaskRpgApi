@@ -1,5 +1,4 @@
 using TaskRpgApi.Domain.Models;
-using TaskRpgApi.Models;
 using TaskRpgApi.Persistance.Entities;
 
 namespace TaskRpgApi.Domain.Abstractions.Repositories;

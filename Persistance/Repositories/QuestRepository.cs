@@ -1,8 +1,7 @@
 using AutoMapper;
-using CropKeeperApi.Persistence.Repositories;
+using TaskRpgApi.Persistence.Repositories;
 using TaskRpgApi.Domain.Abstractions.Repositories;
 using TaskRpgApi.Domain.Models;
-using TaskRpgApi.Models;
 using TaskRpgApi.Persistance.Entities;
 
 namespace TaskRpgApi.Persistance.Repositories;

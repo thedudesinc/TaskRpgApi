@@ -1,7 +1,7 @@
 using AutoMapper;
-using CropKeeperApi.Domain.Models.Inputs;
-using CropKeeperApi.Domain.Models.Outputs;
-using CropKeeperApi.Persistence.Repositories;
+using TaskRpgApi.Domain.Models.Inputs;
+using TaskRpgApi.Domain.Models.Outputs;
+using TaskRpgApi.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
 using TaskRpgApi.Domain.Abstractions;
 using TaskRpgApi.Persistance.Entities;
