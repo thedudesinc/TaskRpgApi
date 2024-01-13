@@ -1,10 +1,12 @@
 using TaskRpgApi.Domain.Abstractions.Entities;
 
-namespace TaskRpgApi.Models;
+namespace TaskRpgApi.Domain.Models;
 
 public class QuestOutput : IOutput
 {
     public Guid Id { get; set; }
+
+    public Guid UserId { get; set; }
 
     public string Name { get; set; } = string.Empty;
 
