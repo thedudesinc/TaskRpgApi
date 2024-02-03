@@ -7,7 +7,7 @@ namespace TaskRpgApi.App.Controllers;
 
 [Authorize]
 [ApiController]
-[Route("api/quest")]
+[Route("api/character")]
 public class CharacterController
 {
     private readonly ICharacterService _service;
