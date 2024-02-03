@@ -23,6 +23,7 @@ public static class Registration
         services.AddTransient<ICharacterRepository, CharacterRepository>();
         services.AddTransient<IUserService, UserService>();
         services.AddTransient<IQuestService, QuestService>();
+        services.AddTransient<ICharacterService, CharacterService>();
         services.AddTransient<IAuthenticationService, AuthenticationService>();
 
         services.AddAutoMapper(typeof(TaskRpgProfile));
