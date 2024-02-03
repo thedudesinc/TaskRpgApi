@@ -20,6 +20,7 @@ public static class Registration
 
         services.AddTransient<IUserRepository, UserRepository>();
         services.AddTransient<IQuestRepository, QuestRepository>();
+        services.AddTransient<ICharacterRepository, CharacterRepository>();
         services.AddTransient<IUserService, UserService>();
         services.AddTransient<IQuestService, QuestService>();
         services.AddTransient<IAuthenticationService, AuthenticationService>();

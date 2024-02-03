@@ -15,6 +15,9 @@ public class TaskRpgProfile : Profile
 
         CreateMap<QuestInput, Quest>();
         CreateMap<Quest, QuestOutput>();
+
+        CreateMap<CharacterInput, Character>();
+        CreateMap<Character, CharacterOutput>();
         // Use CreateMap... Etc.. here (Profile methods are the same as configuration methods)
     }
 }
