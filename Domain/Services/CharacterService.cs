@@ -25,7 +25,7 @@ public class CharacterService : ICharacterService
 
     public async Task<IEnumerable<CharacterOutput>> GetByUserId(Guid id, CancellationToken ct)
     {
-        return await _repository.Find((quest) => quest.UserId == id, ct);
+        return await _repository.Find((character) => character.UserId == id, ct);
     }
 
     public async Task<CharacterOutput> Create(CharacterInput input, CancellationToken ct)

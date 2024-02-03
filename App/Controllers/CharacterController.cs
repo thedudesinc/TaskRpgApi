@@ -39,16 +39,16 @@ public class CharacterController
 
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status202Accepted)]
-    public async Task<ActionResult<CharacterOutput>> Create([FromBody] CharacterInput quest, CancellationToken ct)
+    public async Task<ActionResult<CharacterOutput>> Create([FromBody] CharacterInput character, CancellationToken ct)
     {
-        return await _service.Create(quest, ct);
+        return await _service.Create(character, ct);
     }
 
     [HttpPut]
     [Route("{id}")]
-    public async Task<ActionResult<CharacterOutput>> Update(Guid id, [FromBody] CharacterInput quest, CancellationToken ct)
+    public async Task<ActionResult<CharacterOutput>> Update(Guid id, [FromBody] CharacterInput character, CancellationToken ct)
     {
-        return await _service.Update(id, quest, ct);
+        return await _service.Update(id, character, ct);
     }
 
     [HttpDelete]
