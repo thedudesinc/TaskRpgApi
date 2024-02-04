@@ -1,4 +1,5 @@
 using TaskRpgApi.Domain.Abstractions.Entities;
+using TaskRpgApi.Persistance.Enums;
 
 namespace TaskRpgApi.Persistance.Entities;
 
@@ -11,6 +12,8 @@ public class Quest : IEntity
     public string Title { get; set; } = string.Empty;
 
     public string Description { get; set; } = string.Empty;
+
+    public QuestTag Tag { get; set; }
 
     public int Xp { get; set; }
 

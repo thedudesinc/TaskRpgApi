@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TaskRpgApi.Persistance;
 
@@ -11,9 +12,11 @@ using TaskRpgApi.Persistance;
 namespace TaskRpgApi.Migrations
 {
     [DbContext(typeof(TaskRpgContext))]
-    partial class TaskRpgContextModelSnapshot : ModelSnapshot
+    [Migration("20240204211310_quest model change")]
+    partial class questmodelchange
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
