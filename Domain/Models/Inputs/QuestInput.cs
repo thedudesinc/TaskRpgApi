@@ -10,8 +10,6 @@ public class QuestInput : IInput
 
     public string Description { get; set; } = string.Empty;
 
-    public List<float> ChallengeLevel { get; set; } = new List<float>();
-
     public int Xp { get; set; }
 
     public int Gold { get; set; }
