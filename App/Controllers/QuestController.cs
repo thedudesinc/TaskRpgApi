@@ -8,7 +8,7 @@ namespace TaskRpgApi.App.Controllers;
 [Authorize]
 [ApiController]
 [Route("api/quest")]
-public class QuestController
+public class QuestController : ControllerBase
 {
     private readonly IQuestService _service;
 
@@ -31,9 +31,10 @@ public class QuestController
     }
 
     [HttpGet]
-    [Route("getByUserId/{id}")]
-    public async Task<IEnumerable<QuestOutput>> GetByUserId(Guid id, CancellationToken ct)
+    [Route("getByUserId")]
+    public async Task<IEnumerable<QuestOutput>> GetByUserId(CancellationToken ct)
     {
+        var id = Guid.Parse(HttpContext.User.Claims.Single(u => u.Type == "Id").Value);
         return await _service.GetByUserId(id, ct);
     }
 

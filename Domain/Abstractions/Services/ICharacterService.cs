@@ -8,7 +8,7 @@ public interface ICharacterService
 
     Task<CharacterOutput> Get(Guid id, CancellationToken ct);
 
-    Task<IEnumerable<CharacterOutput>> GetByUserId(Guid id, CancellationToken ct);
+    Task<CharacterOutput> GetByUserId(Guid id, CancellationToken ct);
 
     Task<CharacterOutput> Create(CharacterInput input, CancellationToken ct);
 

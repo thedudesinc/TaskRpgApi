@@ -8,7 +8,7 @@ namespace TaskRpgApi.App.Controllers;
 [Authorize]
 [ApiController]
 [Route("api/character")]
-public class CharacterController
+public class CharacterController : ControllerBase
 {
     private readonly ICharacterService _service;
 
@@ -31,9 +31,10 @@ public class CharacterController
     }
 
     [HttpGet]
-    [Route("getByUserId/{id}")]
-    public async Task<IEnumerable<CharacterOutput>> GetByUserId(Guid id, CancellationToken ct)
+    [Route("getByUserId")]
+    public async Task<CharacterOutput> GetByUserId(CancellationToken ct)
     {
+        var id = Guid.Parse(HttpContext.User.Claims.Single(u => u.Type == "Id").Value);
         return await _service.GetByUserId(id, ct);
     }
 
