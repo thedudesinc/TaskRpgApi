@@ -2,5 +2,8 @@
   "files.exclude": {
     "obj": true,
     "bin": true
-  }
+  },
+  "cSpell.words": [
+    "reworkcharactermodel"
+  ]
 }

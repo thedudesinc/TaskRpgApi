@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using TaskRpgApi.Persistance;
+using TaskRpgApi.Persistence;
 
 #nullable disable
 
@@ -22,7 +22,7 @@ namespace TaskRpgApi.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("TaskRpgApi.Persistance.Entities.Character", b =>
+            modelBuilder.Entity("TaskRpgApi.Persistence.Entities.Character", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -58,7 +58,7 @@ namespace TaskRpgApi.Migrations
                     b.ToTable("Characters");
                 });
 
-            modelBuilder.Entity("TaskRpgApi.Persistance.Entities.Quest", b =>
+            modelBuilder.Entity("TaskRpgApi.Persistence.Entities.Quest", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -98,7 +98,7 @@ namespace TaskRpgApi.Migrations
                     b.ToTable("Quests");
                 });
 
-            modelBuilder.Entity("TaskRpgApi.Persistance.Entities.User", b =>
+            modelBuilder.Entity("TaskRpgApi.Persistence.Entities.User", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()

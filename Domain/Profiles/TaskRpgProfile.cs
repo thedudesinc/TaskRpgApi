@@ -2,7 +2,7 @@ using AutoMapper;
 using TaskRpgApi.Domain.Models.Inputs;
 using TaskRpgApi.Domain.Models.Outputs;
 using TaskRpgApi.Domain.Models;
-using TaskRpgApi.Persistance.Entities;
+using TaskRpgApi.Persistence.Entities;
 
 namespace TaskRpgApi.Domain.Profiles;
 

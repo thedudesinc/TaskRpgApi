@@ -6,8 +6,8 @@ using TaskRpgApi.Domain.Abstractions.Repositories;
 using TaskRpgApi.Domain.Abstractions.Services;
 using TaskRpgApi.Domain.Profiles;
 using TaskRpgApi.Domain.Services;
-using TaskRpgApi.Persistance;
-using TaskRpgApi.Persistance.Repositories;
+using TaskRpgApi.Persistence;
+using TaskRpgApi.Persistence.Repositories;
 
 namespace TaskRpgApi.App;
 
