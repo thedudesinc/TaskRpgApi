@@ -4,9 +4,9 @@ using TaskRpgApi.Domain.Models.Outputs;
 using TaskRpgApi.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
 using TaskRpgApi.Domain.Abstractions;
-using TaskRpgApi.Persistance.Entities;
+using TaskRpgApi.Persistence.Entities;
 
-namespace TaskRpgApi.Persistance.Repositories;
+namespace TaskRpgApi.Persistence.Repositories;
 
 public class UserRepository : GenericRepository<User, UserInput, UserOutput>, IUserRepository
 {

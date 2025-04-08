@@ -1,4 +1,4 @@
-namespace TaskRpgApi.Persistance.Enums;
+namespace TaskRpgApi.Persistence.Enums;
 
 public enum QuestTag
 {

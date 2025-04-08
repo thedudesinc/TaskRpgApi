@@ -1,6 +1,6 @@
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
-using TaskRpgApi.Persistance;
+using TaskRpgApi.Persistence;
 using AutoMapper;
 using TaskRpgApi.Domain.Abstractions.Repositories;
 using TaskRpgApi.Domain.Abstractions.Entities;

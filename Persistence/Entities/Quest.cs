@@ -1,7 +1,7 @@
 using TaskRpgApi.Domain.Abstractions.Entities;
-using TaskRpgApi.Persistance.Enums;
+using TaskRpgApi.Persistence.Enums;
 
-namespace TaskRpgApi.Persistance.Entities;
+namespace TaskRpgApi.Persistence.Entities;
 
 public class Quest : IEntity
 {

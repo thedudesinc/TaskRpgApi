@@ -2,9 +2,9 @@ using AutoMapper;
 using TaskRpgApi.Persistence.Repositories;
 using TaskRpgApi.Domain.Abstractions.Repositories;
 using TaskRpgApi.Domain.Models;
-using TaskRpgApi.Persistance.Entities;
+using TaskRpgApi.Persistence.Entities;
 
-namespace TaskRpgApi.Persistance.Repositories;
+namespace TaskRpgApi.Persistence.Repositories;
 
 public class CharacterRepository : GenericRepository<Character, CharacterInput, CharacterOutput>, ICharacterRepository
 {

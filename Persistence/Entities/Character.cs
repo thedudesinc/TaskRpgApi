@@ -1,6 +1,6 @@
 using TaskRpgApi.Domain.Abstractions.Entities;
 
-namespace TaskRpgApi.Persistance.Entities;
+namespace TaskRpgApi.Persistence.Entities;
 
 public class Character : IEntity
 {

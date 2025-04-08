@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using TaskRpgApi.Persistance.Entities;
+using TaskRpgApi.Persistence.Entities;
 
-namespace TaskRpgApi.Persistance;
+namespace TaskRpgApi.Persistence;
 
 public partial class TaskRpgContext : DbContext
 {
